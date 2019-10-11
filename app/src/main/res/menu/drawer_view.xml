@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:title="Profile"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/perf"
+            android:title="Performance Tracker"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/study"
+            android:title="Study Material"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/planner"
+            android:title="Planner"
+            tools:ignore="HardcodedText" />
+        <!--<item
+            android:id="@+id/schedule"
+            android:title="Schedule"
+            tools:ignore="HardcodedText" />-->
+        <item
+            android:id="@+id/aboutus"
+            android:title="About"
+            tools:ignore="HardcodedText" />
+    </group>
+</menu>

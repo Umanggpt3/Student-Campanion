@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity_aboutus">
+
+    <!-- Layout to contain contents of main body of screen (drawer will slide over this) -->
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity_aboutus">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="68dp"
+            android:background="@android:color/black"
+            android:text="About the App"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="157dp"
+            android:inputType="textMultiLine"
+            android:text="Here in SIT the students face a lot of problems regarding attendance shortage, academic performance, study materials, etc. So our team has come up with an  idea to address these issues. Our idea is to make an app for the students in SIT:\ni) In which the students can keep track of their attendance so that they can avoid shortage of attendance.\nii) In which the student can upload their assignment, internal and quiz marks and keep a check on their CIE.\niii) In which the students can have easy access to notes and previous year test papers.\niv) The students can use the “Planner” with which they can plan their daily schedule and Do Not Disturb (DND) mode will be enabled during study hours on their phones.\nv) In which the students can get the information about different clubs of SIT.\nvi) In which we will have immediate notices and announcements.\n\nDeveloped  By:-\n - Umang Gupta (1SI17CS124) \n - Kumarguru V (1SI17IS019)\n - Dheeraj Saraogi (1SI17CS035)\n - Milin Kejriwal (1SI17CS059). "
+            android:textAlignment="viewStart"
+            tools:ignore="HardcodedText,TextViewEdits" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_view"></android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
